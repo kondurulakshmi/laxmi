@@ -1,0 +1,589 @@
+body {
+	font:12px/1.55 Arial, sans-serif;
+	color:#000000; 
+	text-align:center;
+	background-attachment:fixed;
+	background: url("bkg_new.png") repeat;
+	background-position:center top;
+}
+
+.nivoSlider {
+	position:relative;
+	width:994px;
+	height:400px;
+	overflow: hidden;
+}
+.nivoSlider img {
+	position:absolute;
+	top:0px;
+	left:0px;
+	max-width:994px;
+	width: 994px;
+	height:400px;
+}
+
+#dynamic {
+	width: 994px;
+	margin: 0px auto;
+	text-align: left;
+	z-index: 101;
+	background: #fff;
+	padding: 5px 10px 3px 10px;
+	
+}
+
+* { 
+	margin:0; 
+	padding:0; 
+}
+
+h3 { 
+	margin:0 0 5px; 
+	line-height:1.35; 
+	color:#0a263c; 
+}
+
+h3 { 
+	font-size:16px; 
+	font-weight:normal; 
+}
+
+button.button::-moz-focus-inner { 
+	padding:0; 
+	border:0; 
+}
+
+button.button { 
+	overflow:visible; 
+	width:auto; 
+	border:0; 
+	padding:0; 
+	margin:0; 
+	background:transparent; 
+	cursor:pointer; 
+}
+
+button.button span { 
+	display:block; 
+	height:25px;  
+	padding:0 0 0 5px; 
+	font:bold 16px/25px Arial, Helvetica, sans-serif; 
+	text-align:center; 
+	white-space:nowrap;
+	color:#fff; 
+	text-transform:uppercase;
+}
+
+.logo { 
+	float:left;
+	margin:0 0 0 5px;
+	text-decoration: none !important;
+}
+
+.header { 
+	width:994px;
+	margin:0px auto;
+	text-align:right; 
+	position:relative; 
+	z-index:101; 
+	background:#fff;
+	padding:5px 10px 3px 10px;
+}
+
+.header .quick-access { 
+	float:right; 
+	height:20px;
+}
+
+.quick1 {
+	margin-top:10px;
+	margin-bottom:10px;
+	margin-left:10px;
+	margin-right:10px;
+}
+
+.header .form-search { 
+	float:left; 
+	margin:50px 0 0 126px; 
+	background: url("bkg_form-search.png") repeat;
+	height:30px;
+	position: relative;
+}
+
+.header .form-search label { 
+	display:none; 
+}
+
+.header .form-search input.input-text { 
+	float:left; 
+	background:none; 
+	border:0; 
+	width:311px; 
+	margin:0; 
+	line-height:24px; 
+	height:24px; 
+	padding:3px 2px 3px 10px; 
+	color:#000000;
+	font-size:11px;
+	text-transform:lowercase;
+}
+
+.header .form-search button.button { 
+	float:right; 
+}
+
+.header .form-search button.button span { 
+	border:0; 
+	height:30px;  
+	background:url("i_search.png") center center no-repeat;
+	padding:0;
+	width:95px;
+	text-indent:-9999px; 
+	overflow:hidden;
+}
+
+.header .form-search .search-autocomplete { 
+	z-index:999;
+	position:absolute!important;
+	top:30px!important;
+	left:0!important; 
+}
+
+
+.header:after,
+.header .quick-access:after { 
+	display:block; 
+	content:"."; 
+	clear:both; 
+	font-size:0; 
+	line-height:0; 
+	height:0; 
+	overflow:hidden; 
+}
+
+.menu{
+	width:994px;
+	margin:0 auto;
+	z-index:100;
+	position:relative;
+	list-style:none;
+	height:40px;
+	background:#0AAABA;
+	border-radius:5px;
+}
+
+#menus {
+	height:auto;
+}
+
+.sym {
+	line-weight: bold;
+}
+
+
+.menu li {
+	float:left;
+	text-align:center;
+	position:relative;
+	border:none;
+	padding-right:10px;
+}
+
+.menu li:hover {
+	z-index:2;
+}
+
+.menu li a {
+	color: #fff;
+	outline:0;	
+	text-decoration:none;
+	display:block;
+	font-weight:bold;
+	font-size:12px;
+	padding:0 10px 0 10px;    
+	text-transform: capitalize;
+}
+
+
+.menu .dropdown_1columns a, 
+.menu .dropdown_2columns a {
+	font-family:arial;
+	background:0;
+	color:#000000;
+	font-size:12px;
+	text-transform:none;
+	font-weight:normal;
+	padding-left:0;
+	line-height:normal;
+	margin:5px 0;
+}
+
+.menu li:hover div a {
+	color:green;
+	font-weight:normal;
+}
+
+.menu li:hover div a:hover{
+	color:#47CBDE;
+	font-weight:normal;
+	background:0;
+	text-decoration:underline;
+}
+
+.menu li:hover div a:hover span{
+	color:#47CBDE;
+}
+
+.menu li ul li a:hover {
+	color:#47CBDE;
+}
+
+.menu .dropdown_1columns, 
+.menu .dropdown_2columns {
+	left:-999em;
+	position:absolute;
+	background:#f1f1f1;
+	box-shadow:0 0 10px rgba(0, 0, 0, 0.2);
+	padding:15px 20px;
+	text-align:left;
+}
+.menu .dropdown_1columns span, 
+.menu .dropdown_2columns span {
+	font-weight:bold;
+	font-size:12px;
+	color:#000000;
+	font-family:arial;
+}
+
+.menu .dropdown_1columns {
+	width: 150px;
+	margin:0 641px 0 0;
+}
+
+.menu .dropdown_2columns {
+	width: 360px;
+}
+
+.menu li:hover .dropdown_1columns, 
+.menu li:hover .dropdown_2columns {
+	left:0;
+	top:40px;
+}
+
+.menu .col_1 {
+	display:inline;
+	float: left;
+	position: relative;
+}
+
+.menu .col_1 {
+	width:165px;
+}
+
+.menu li {
+	font-size:16px; 
+	line-height:40px;
+	text-align:center;
+}
+.menu li ul {
+	list-style:none;
+	padding:0;
+	margin:0 0 10px 0;
+}
+.menu li ul li {
+	font-size:12px;
+	line-height:24px;
+	position:relative;
+	padding:0;
+	margin:0;
+	float:left;
+	text-align:left;
+	width:149px;
+}
+.menu li ul li:hover {
+	background:none!important;
+	border:none;
+	padding:0;
+	margin:0;
+}
+
+.menu1 {
+	width:995px;
+	margin:0 auto;
+	z-index:100;
+	position:relative;
+	list-style:none;
+	height:auto;
+	display: mouse-pointer;
+	text-align:center;
+}
+
+.menu_home_icon {
+	background-color:#0AAABA;
+	border-radius:5px 5px 0 0;
+	height:40px;
+	padding:10px 0 0;
+	width:50px;
+	font-weight: bold;
+	text-align:center;
+	display: block;
+}
+
+.menu_home_icon a {
+	text-decoration: none;
+	color: #ffffff;
+	height:30px;
+	text-align:center;
+}
+
+.menu_boys {
+	background-color:#d84718;
+	border-radius:5px 5px 5px 5px;
+	height:32px;
+	padding:10px 0 0; 
+	margin:-48px 0px 0px 51px;
+	width:70px;
+	color:#fff;
+	font-weight:bold;
+	font-family:Arial Rounded MT Bold;
+	text-align:center;
+}
+
+.menu_boys a {
+	text-decoration:none;
+	color:#fff;
+}
+
+.menu_girls {
+	background-color:#d84718;
+	border-radius:5px 5px 5px 5px;
+	height:32px;
+	padding:10px 0 0; 
+	margin:-42px 0px 0px 122px;
+	width:70px;
+	color:#fff;
+	font-weight:bold;
+	font-family:Arial Rounded MT Bold;
+}
+
+.menu_girls a {
+	text-decoration:none;
+	color:#fff;
+}
+
+.menu_babies {
+	background-color:#d84718;
+	border-radius:5px 5px 5px 5px;
+	height:32px;
+	padding:10px 0 0; 
+	margin:-42px 0px 0px 193px;
+	width:70px;
+	color:#fff;
+	font-weight:bold;
+	font-family:Arial Rounded MT Bold;
+}
+
+.menu_babies a {
+	text-decoration:none;
+	color:#fff;
+}
+
+.theme-default .nivoSlider {
+	position:relative;
+	background:#fff url(loading.gif) no-repeat 50% 50%;
+    margin-bottom:10px;
+    -webkit-box-shadow: 0px 1px 5px 0px #4a4a4a;
+    -moz-box-shadow: 0px 1px 5px 0px #4a4a4a;
+    box-shadow: 0px 1px 5px 0px #4a4a4a;
+}
+.theme-default .nivoSlider img {
+	position:absolute;
+	top:0px;
+	left:0px;
+	display:none;
+}
+.theme-default .nivoSlider a {
+	border:0;
+	display:block;
+}
+
+.theme-default .nivo-controlNav {
+	text-align: center;
+	padding: 20px 0;
+}
+.theme-default .nivo-controlNav a {
+	display:inline-block;
+	width:22px;
+	height:22px;
+	background:url(bullets.png) no-repeat;
+	text-indent:-9999px;
+	border:0;
+	margin: 0 2px;
+}
+.theme-default .nivo-controlNav a.active {
+	background-position:0 -22px;
+}
+
+.theme-default .nivo-directionNav a {
+	display:block;
+	width:30px;
+	height:30px;
+	background:url(arrows.png) no-repeat;
+	text-indent:-9999px;
+	border:0;
+	opacity: 0;
+	-webkit-transition: all 200ms ease-in-out;
+    -moz-transition: all 200ms ease-in-out;
+    -o-transition: all 200ms ease-in-out;
+    transition: all 200ms ease-in-out;
+}
+.theme-default:hover .nivo-directionNav a { opacity: 1; }
+.theme-default a.nivo-nextNav {
+	background-position:-30px 0;
+	right:15px;
+}
+.theme-default a.nivo-prevNav {
+	left:15px;
+}
+
+.theme-default .nivo-caption {
+    font-family: Helvetica, Arial, sans-serif;
+}
+.theme-default .nivo-caption a {
+    color:#fff;
+    border-bottom:1px dotted #fff;
+}
+.theme-default .nivo-caption a:hover {
+    color:#fff;
+}
+
+.theme-default .nivo-controlNav.nivo-thumbs-enabled {
+	width: 100%;
+}
+.theme-default .nivo-controlNav.nivo-thumbs-enabled a {
+	width: auto;
+	height: auto;
+	background: none;
+	margin-bottom: 5px;
+}
+.theme-default .nivo-controlNav.nivo-thumbs-enabled img {
+	display: block;
+	width: 120px;
+	height: auto;
+}
+
+.nivoSlider {
+	position:relative;
+	width:995px;
+	height:auto;
+	overflow: hidden;
+	margin: 0 0 0 140px;
+}
+.nivoSlider img {
+	position:absolute;
+	top:0px;
+	left:0px;
+	max-width: none;
+}
+.nivo-main-image {
+	display: block !important;
+	position: relative !important; 
+	width: 960px;
+}
+
+/* If an image is wrapped in a link */
+.nivoSlider a.nivo-imageLink {
+	position:absolute;
+	top:0px;
+	left:0px;
+	width:960px;
+	height:100%;
+	border:0;
+	padding:0;
+	margin:0;
+	z-index:6;
+	display:none;
+	background:white; 
+	filter:alpha(opacity=0); 
+	opacity:0;
+}
+/* The slices and boxes in the Slider */
+.nivo-slice {
+	display:block;
+	position:absolute;
+	z-index:5;
+	height:100%;
+	top:0;
+}
+.nivo-box {
+	display:block;
+	position:absolute;
+	z-index:5;
+	overflow:hidden;
+}
+.nivo-box img { display:block; }
+
+/* Caption styles */
+.nivo-caption {
+	position:absolute;
+	left:0px;
+	bottom:0px;
+	background:#000;
+	color:#fff;
+	width:960px;
+	z-index:8;
+	padding: 5px 10px;
+	opacity: 0.8;
+	overflow: hidden;
+	display: none;
+	-moz-opacity: 0.8;
+	filter:alpha(opacity=8);
+	-webkit-box-sizing: border-box; /* Safari/Chrome, other WebKit */
+	-moz-box-sizing: border-box;    /* Firefox, other Gecko */
+	box-sizing: border-box;         /* Opera/IE 8+ */
+}
+.nivo-caption p {
+	padding:5px;
+	margin:0;
+}
+.nivo-caption a {
+	display:inline !important;
+}
+.nivo-html-caption {
+    display:none;
+}
+/* Direction nav styles (e.g. Next & Prev) */
+.nivo-directionNav a {
+	position:absolute;
+	top:45%;
+	z-index:9;
+	cursor:pointer;
+}
+.nivo-prevNav {
+	left:0px;
+}
+.nivo-nextNav {
+	right:0px;
+}
+/* Control nav styles (e.g. 1,2,3...) */
+.nivo-controlNav {
+	text-align:center;
+	padding: 15px 0;
+}
+.nivo-controlNav a {
+	cursor:pointer;
+}
+.nivo-controlNav a.active {
+	font-weight:bold;
+}
+
+
+.menu1{
+	width:994px;
+	margin:0 auto;
+	z-index:100;
+	position:relative;
+	list-style:none;
+	height:45px;
+}
+

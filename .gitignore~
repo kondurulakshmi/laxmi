@@ -1,0 +1,10 @@
+venv
+*.pyc
+staticfiles
+
+*.yml
+*.log
+
+rm *.yml *.log
+git rm *.yml *.log
+git commit -m "removed .yml and .log files"
